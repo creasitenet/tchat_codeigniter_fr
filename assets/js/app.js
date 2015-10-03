@@ -1,6 +1,6 @@
 
-var tchat_timer = setInterval(ajax_refresh("tchat/getAjaxRefresh", "", "#tchat_messages"),5000);
-var user_timer = setInterval(ajax_refresh("user/getAjaxRefresh", "", "#tchat_users"),10000);
+var tchat_timer = setInterval(function(){ajax_refresh("tchat/getAjaxRefresh", "", "#tchat_messages")},5000);
+var user_timer = setInterval(function(){ajax_refresh("user/getAjaxRefresh", "", "#tchat_users")},10000);
 
 $(document).ready(function(){
    
