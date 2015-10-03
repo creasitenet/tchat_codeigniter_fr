@@ -39,13 +39,11 @@
 	<!-- User -->
 	<div id="tchatusers">
 		<div id="tchat_users">
-			<ul class="users">
-				<?php if(isset($users)): ?>
-				    <?php if(!empty($users)): ?>
-				        <?php include('_users.php'); ?>
-				      <?php endif; ?>
-				<?php endif; ?>
-			</ul>
+			<?php if(isset($users)): ?>
+			    <?php if(!empty($users)): ?>
+			        <?php include('_users.php'); ?>
+			      <?php endif; ?>
+			<?php endif; ?>
 		</div>
 	</div>
 	<?php if($this->session->userdata('user') || $this->session->userdata('logged') ): ?>
